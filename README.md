@@ -1,6 +1,6 @@
 # Home Textile Business Website
 
-![Business Logo](path/to/logo.png)
+![Business Logo](https://github.com/dzopunk/katatekstil.rs/blob/main/logo__purple.svg)
 
 ## Overview
 
