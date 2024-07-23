@@ -26,3 +26,9 @@ This project is a multi-page website developed for a home textile business. It i
 - **Lozad.js**: For lazy loading images and content.
 - **SwiperJS**: For a modern carousel in the hero section.
 - **HTML/CSS**: Structured using best practices for maintainability and scalability.
+
+## Contact
+- Jovana Vučetić - jovucetic@gmail.com
+
+## Live Page
+- https://katatekstil.rs/
