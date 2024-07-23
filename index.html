@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kata Tekstil nudi kvalitetne tekstilne proizvode po meri: posteljine, prekrivače, jorgane, jastuke, peškire, krpe, stolnjake, zavese (rolo, zebra, rimske, panelne), garnisne (zidne, plafonske) uz ugradnju, mebl štofove, visokokvalitetne tapete i drvene venecijanere. Prilagodite svoj prostor s našim proizvodima vrhunske izrade." />
+    <link rel="stylesheet" href="sass/style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon 46x46.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <noscript><link rel="stylesheet" href="styles.css" /></noscript>
+    <script defer src="app.js"></script>
+    <script defer src="heroapp.js"></script>
+    <title>KATAtekstil</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav hero__nav">
+        <div class="header__nav_logo">
+          <a href="/"><img class="header__nav_logo-img" src="./images/logo.svg" alt="Katatekstil logo" /></a>
+        </div>
+        <div class="header__nav_menu">
+          <div class="header__nav_menu-mobile">
+            <button class="header__nav_menu-mobile--icon" aria-label="otvori zatvori meni">
+              <img src="./icons/list-black.svg" alt="Otvori meni" class="nav__menu_icon" />
+              <img src="./icons/x-circle-black.svg" alt="Zatvori meni" class="nav__menu_icon display__none" />
+            </button>
+            <div class="header__mobile display__none">
+              <ul class="header__mobile_list">
+                <li class="header__mobile_list-item"><a href="./">početna</a></li>
+                <li class="header__mobile_list-item"><a href="curtains.html">zavese</a></li>
+                <li class="header__mobile_list-item"><a href="wallpapers.html">tapete</a></li>
+                <li class="header__mobile_list-item"><a href="others.html">ostali proizvodi</a></li>
+                <li class="header__mobile_list-item"><a href="measure.html">uzimanje mera</a></li>
+                <li class="header__mobile_list-item"><a href="contact.html">kontakt</a></li>
+                <li class="header__mobile_list-item">
+                  <div class="header__mobile_list-item--socials">
+                    <a href="https://www.facebook.com/katatekstil">
+                      <img src="./icons/facebook-black.svg" alt="Facebook Katatekstil" />
+                    </a>
+                    <a href="https://www.instagram.com/kata_tekstil/?igshid=MzRlODBiNWFlZA%3D%3D">
+                      <img src="./icons/instagram-black.svg" alt="instagram Katatekstil" />
+                    </a>
+                    <a href="https://www.tiktok.com/@kata_tekstil?_t=8gHXMOHaa29&_r=1">
+                      <img src="./icons/tiktok-black.svg" alt="Tiktok Katatekstil" />
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__nav_menu-desktop display__none">
+            <ul class="header__nav_menu-desktop--list">
+              <li class="header__nav_menu-desktop--list-item">
+                <a href="./">početna</a>
+              </li>
+              <li class="header__nav_menu-desktop--list-item" id="curtains">
+                <a href="curtains.html">zavese</a>
+              </li>
+              <li class="header__nav_menu-desktop--list-item">
+                <a href="wallpapers.html">tapete</a>
+              </li>
+              <li class="header__nav_menu-desktop--list-item">
+                <a href="others.html"> ostali proizvodi</a>
+              </li>
+              <li class="header__nav_menu-desktop--list-item">
+                <a href="measure.html">uzimanje mera</a>
+              </li>
+              <li class="header__nav_menu-desktop--list-item">
+                <a href="contact.html">kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="carousely">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide one">
+              <img src="./images/krevet.webp" alt="Katatekstil posteljina" />
+              <div class="carousel__header">
+                <h1 class="carousel__header_text">Kvalitet i Stil na Dohvat Ruke.</h1>
+                <h2 class="carousel__header_subtext">Izbor bez premca, spojite udobnost i eleganciju kod nas.</h2>
+              </div>
+            </div>
+            <div class="swiper-slide two">
+              <img src="./images/shades.webp" alt="Katatekstil zavese" />
+              <div class="carousel__header">
+                <h1 class="carousel__header_text">Elegancija i Intimnost u Vašem Domu.</h1>
+                <h2 class="carousel__header_subtext">Zavese pružaju savršen spoj stila i privatnosti.</h2>
+              </div>
+            </div>
+            <div class="swiper-slide three">
+              <img src="./images/tapeta.webp" alt="Katatekstil tapete" />
+              <div class="carousel__header">
+                <h1 class="carousel__header_text">Brza Transformacija i Elegancija</h1>
+                <h2 class="carousel__header_subtext">Tapete nude trenutnu promenu i sofisticiranost prostora.</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </header>
+    <section class="intro">
+      <h1 class="intro__text">Dobrodošli u Kata Tekstil - vaša destinacija za savršeno opremljen enterijer! Smešteni u srcu Stare Pazove, ponosno nudimo široku paletu kvalitetnih zavesa, tapeta i mebl štofa, kao i bogat izbor kućnog tekstila uključujući posteljinu, jastuke, jorgane, peškire i još mnogo toga. Nudimo besplatnu uslugu izlaska na teren radi uzimanja preciznih mera za izradu i montažu zavesa na široj teritoriji Stare Pazove. Naš fokus je unapređenje Vašeg prostora u skladu sa vašim željama i potrebama.</h1>
+    </section>
+    <section class="services">
+      <div class="products">
+        <div class="products__item">
+          <div class="products__item_card">
+            <div class="products__item_above">
+              <img class="products__item_card-img lozad" data-src="./images/cards/zavesa__01.webp" alt="Katatekstil slika zavese" />
+              <h1 class="products__item_card-text--header">Zavese po meri za vaš dom</h1>
+            </div>
+            <div class="products__item_card-text">
+              <div>
+                <p class="products__item_card-text--paragraph">Bilo da su klasične zavese sa draperijama ili rolo sistemi, pobrinućemo se da ulepšaju svaki kutak vašeg doma.</p>
+              </div>
+              <div class="products__item_card-buttons">
+                <button class="button__primary" aria-labelledby="Izbor zavesa"><a href="curtains.html">Izbor zavesa</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="products__item_circle">
+            <img class="products__item_circle-img lozad" data-src="/images/cards/zavesa__01_krug_mala.webp" alt="Katatekstil slika zavese" />
+          </div>
+        </div>
+        <div class="products__item">
+          <div class="products__item_card">
+            <div class="products__item_above">
+              <img class="products__item_card-img lozad" data-src="./images/cards/tapete__01.webp" alt="Katatekstil slika tapete" />
+              <h1 class="products__item_card-text--header">Tapete za dom iz snova</h1>
+            </div>
+            <div class="products__item_card-text">
+              <p class="products__item_card-text--paragraph">Iako su jedno vreme bile zapostavljene, tapete su ponovo apsolutni hit, a kvalitet je podignut na najviši nivo.</p>
+              <div class="products__item_card-buttons">
+                <button class="button__primary" aria-labelledby="Katalog"><a href="wallpapers.html">Katalog</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="products__item_circle">
+            <img class="products__item_circle-img lozad" data-src="./images/cards/tapete__01_krug_mala.webp" alt="Katatekstil slika tapete" />
+          </div>
+        </div>
+        <div class="products__item">
+          <div class="products__item_card">
+            <div class="products__item_above">
+              <img class="products__item_card-img lozad" data-src="./images/cards/posteljina__01.webp" alt="Katatekstil slika posteljine" />
+              <h1 class="products__item_card-text--header">Opremanje kuće na jednom mestu</h1>
+            </div>
+            <div class="products__item_card-text">
+              <p class="products__item_card-text--paragraph">Veliki izbor kućnog tekstila, domaćih i stranih proizvodjača</p>
+              <div class="products__item_card-buttons">
+                <button class="button__primary" aria-labelledby="ceo asortiman"><a href="others.html">Ceo asortiman</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="products__item_circle">
+            <img class="products__item_circle-img lozad" data-src="./images/cards/posteljina__01_krug_mala.webp" alt="Katatekstil slika posteljine" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brands__tips">
+      <div class="brands">
+        <div class="brands__text">
+          <h2 class="brands__text_header">Brendovi</h2>
+          <p class="brands__text_paragraph">Ponudom renomiranih brendova garantujemo kvalitet i eleganciju za svaki dom!</p>
+        </div>
+        <div class="brands__logo">
+          <img data-src="./images/brands/bayar.webp" alt="logo brenda" class="brands__logo_item lozad" />
+          <img data-src="./images/brands/colani.webp" alt="logo brenda" class="brands__logo_item lozad" />
+          <img data-src="./images/brands/danube.webp" alt="logo brenda" class="brands__logo_item lozad" />
+          <img data-src="./images/brands/cristina-masi.webp" alt="logo brenda" class="brands__logo_item lozad" />
+          <img data-src="./images/brands/decosa.webp" alt="logo brenda" class="brands__logo_item lozad" />
+          <img data-src="./images/brands/fillenc.webp" alt="logo brenda" class="brands__logo_item lozad" />
+          <img data-src="./images/brands/karim-rashid.webp" alt="logo brenda" class="brands__logo_item lozad" />
+          <img data-src="./images/brands/marburg.webp" alt="logo brenda" class="brands__logo_item lozad" />
+          <img data-src="./images/brands/somfy.webp" alt="logo brenda" class="brands__logo_item lozad" />
+          <img data-src="./images/brands/ulf-mortiz.webp" alt="logo brenda" class="brands__logo_item lozad" />
+          <img data-src="./images/brands/zaha-hadid.webp" alt="logo brenda" class="brands__logo_item lozad" />
+          <img data-src="./images/brands/fibre-guard.webp" alt="logo brenda" class="brands__logo_item lozad" />
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__text">
+          <h1 class="video__text_header">Zavirite u naš salon i  pronađite savršene zavese i dekoracije za Vaš dom</h1>
+          <p class="video__text_paragraph">Opremajte kuću na jednom mestu.</p>
+        </div>
+          <div class="youtube-player" data-id="Uv0bgb_e15Q" />
+      </div>
+    </section>
+    <section class="about lozad" data-background-image="/images/about_us.webp">
+      <div class="about__text">
+        <img data-src="./images/logo.svg" alt="Katatekstil logo" class="about__text_logo lozad" />
+        <p class="about__text_paragraph">Kata Tekstil je osnovana 2017. godine u Batajnici kao firma specijalizovana za prodaju kućnog tekstila, a ubrzo smo se usredsredili na specijalizaciju u prodaji visokokvalitetnih zavesa. Od 2021. godine, locirani u Staroj Pazovi, nastavljamo s poslovanjem, pružajući vrhunsku ponudu i usluge u opremanju enterijera sa posebnim naglaskom na zavese.</p>
+        <div class="footer__elements_socials-wrapper">
+          <div>
+            <a href="https://www.facebook.com/katatekstil" target="_blank">
+              <img src="./icons/facebook-black.svg" data-change="./icons/facebook-purple.svg" onmouseover="changeColor(this)" class="socials" alt="dugme za Facebook Katatekstil" />
+            </a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/kata_tekstil/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">
+              <img src="./icons/instagram-black.svg" data-change="./icons/instagram-purple.svg" onmouseover="changeColor(this)" class="socials" alt="dugme za Instagram Katatekstil" />
+            </a>
+          </div>
+          <div>
+            <a href="https://www.tiktok.com/@kata_tekstil?_t=8gHXMOHaa29&_r=1" target="_blank">
+              <img src="./icons/tiktok-black.svg" data-change="./icons/tiktok-purple.svg" onmouseover="changeColor(this)" class="socials" alt="dugme za Tiktok Katatekstil" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footer__elements footer__item">
+          <div class="footer__elements_logo">
+            <img data-src="./images/logo__purple.svg" alt="Logo" class="footer__elements_logo-img lozad" />
+          </div>
+          <div class="footer__elements_items">
+            <div class="footer__elements_address footer__item">
+              <h1 class="footer__elements_header">Adresa:</h1>
+              <a href="https://maps.app.goo.gl/h6mY4MdC2qscxNZy6" target="_blank" class="flex__column_align-center button__secondary">
+                <p>Kralja Petra I oslobodioca 115,</p>
+                <p>Stara Pazova 22300</p>
+              </a>
+            </div>
+            <div class="footer__elements_contact footer__item">
+              <h2 class="footer__elements_header">Kontakt</h2>
+              <p><a href="tel:+381693888323" class="button__secondary">069 38 88 323</a></p>
+              <p><a href="tel:+381641169357" class="button__secondary">064 11 69 357</a></p>
+              <p><a href="tel:+381603888323" class="button__secondary">060 38 88 323</a></p>
+              <p><a href="contact.html" class="button__secondary">radnja@katatekstil.rs</a></p>
+            </div>
+            <div class="footer__elements_products footer__item">
+              <h3 class="footer__elements_header">Proizvodi</h3>
+              <p><a href="curtains.html" class="button__secondary">Zavese</a></p>
+              <p><a href="wallpapers.html" class="button__secondary">Dekoracija zidova</a></p>
+              <p><a href="others.html" class="button__secondary">Ostali proizvodi</a></p>
+            </div>
+            <div class="footer__elements_socials footer__item">
+              <h4 class="footer__elements_header">Pratite nas!</h4>
+              <div class="footer__elements_socials-wrapper">
+                <div>
+                  <a href="https://www.facebook.com/katatekstil" target="_blank" class="button__secondary">
+                    <img data-src="./icons/facebook-white.svg" data-change="./icons/facebook-purple.svg" class="socials lozad" alt="dugme za Facebook Katatekstil" onmouseover="changeColor(this)" />
+                  </a>
+                </div>
+                <div>
+                  <a href="https://www.instagram.com/kata_tekstil/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" class="button__secondary">
+                    <img data-src="./icons/instagram-white.svg" data-change="./icons/instagram-purple.svg" class="socials lozad" alt="dugme za Instagram Katatekstil" onmouseover="changeColor(this)" />
+                  </a>
+                </div>
+                <div>
+                  <a href="https://www.tiktok.com/@kata_tekstil?_t=8gHXMOHaa29&_r=1" target="_blank" class="button__secondary">
+                    <img data-src="./icons/tiktok-white.svg" data-change="./icons/tiktok-purple.svg" onmouseover="changeColor(this)" class="socials lozad" alt="dugme za Tiktok Katatekstil" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        grabCursor: true,
+        effect: "fade",
+        crossFade: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

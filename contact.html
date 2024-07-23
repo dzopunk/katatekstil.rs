@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="..." />
+    <link rel="stylesheet" href="sass/style.css" />
+    <noscript><link rel="stylesheet" href="styles.css" /></noscript>
+    <script defer src="app.js"></script>
+    <title>Katatekstil - Kontakt</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__nav_logo">
+          <a href="/"><img class="header__nav_logo-img" src="./images/logo.svg" alt="Katatekstil logo" /></a>
+        </div>
+        <div class="header__nav_menu">
+          <div class="header__nav_menu-mobile">
+            <button class="header__nav_menu-mobile--icon" aria-label="otvori zatvori meni">
+              <img src="./icons/list-black.svg" alt="Otvori meni" class="nav__menu_icon" />
+              <img src="./icons/x-circle-black.svg" alt="Zatvori meni" class="nav__menu_icon display__none" />
+            </button>
+            <div class="header__mobile display__none">
+              <ul class="header__mobile_list">
+                <li class="header__mobile_list-item"><a href="./">početna</a></li>
+                <li class="header__nav_menu-desktop--list-item" id="curtains">
+                  <a href="curtains.html">zavese</a>
+                </li>
+                <li class="header__mobile_list-item"><a href="wallpapers.html">tapete</a></li>
+                <li class="header__mobile_list-item"><a href="others.html">ostali proizvodi</a></li>
+                <li class="header__mobile_list-item"><a href="measure.html">uzimanje mera</a></li>
+                <li class="header__mobile_list-item"><a href="contact.html">kontakt</a></li>
+                <li class="header__mobile_list-item">
+                  <div class="header__mobile_list-item--socials">
+                    <a href="#">
+                      <img src="./icons/facebook-black.svg" alt="Facebook Katatekstil" />
+                    </a>
+                    <a href="">
+                      <img src="./icons/instagram-black.svg" alt="instagram Katatekstil" />
+                    </a>
+                    <a href="">
+                      <img src="./icons/tiktok-black.svg" alt="tiktok Katatekstil" />
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__nav_menu-desktop display__none">
+            <ul class="header__nav_menu-desktop--list">
+              <li class="header__nav_menu-desktop--list-item">
+                <a href="./">početna</a>
+              </li>
+              <li class="header__nav_menu-desktop--list-item" id="curtains">
+                <a href="curtains.html">zavese</a>
+              </li>
+              <li class="header__nav_menu-desktop--list-item">
+                <a href="wallpapers.html">tapete</a>
+              </li>
+              <li class="header__nav_menu-desktop--list-item">
+                <a href="others.html"> ostali proizvodi</a>
+              </li>
+              <li class="header__nav_menu-desktop--list-item">
+                <a href="measure.html">uzimanje mera</a>
+              </li>
+              <li class="header__nav_menu-desktop--list-item">
+                <a href="contact.html">kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="header__hero_tabs"></div>
+    </header>
+    <section class="contact">
+      <div class="contact__text">
+        <p class="contact__text_paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia expedita cum voluptas placeat ipsa nesciunt maiores perferendis, repellat et necessitatibus.</p>
+        <a href="tel:+381641169357" class="contact__text_phone"><img src="./icons/phone-black.svg" alt="telefon Katatekstil" class="contact__text_phone-icon" /> 064 11 69 357</a>
+        <div class="footer__elements_socials-wrapper">
+          <div>
+            <a href="#">
+              <img src="./icons/facebook-black.svg" alt="dugme za Facebook Katatekstil" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="./icons/instagram-black.svg" class="footer__elements_socials-icon" alt="dugme za Instagram Katatekstil" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="./icons/tiktok-black.svg" class="footer__elements_socials-icon" alt="dugme za Tiktok Katatekstil" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contact__section">
+        <form name="contact" form autocomplete="off" class="contact__form">
+          <div class="contact__form_input">
+            <h1 class="contact__form_input-header">Pišite nam</h1>
+            <input class="contact__form_field" type="text" name="name" autocomplete="off" placeholder="Ime i prezime" required id="name" />
+
+            <input class="contact__form_field" type="email" name="email" autocomplete="off" placeholder="Email adresa" required id="email" />
+
+            <input class="contact__form_field" type="text" name="subject" autocomplete="nope" placeholder="Naslov poruke" required id="subject" />
+            <textarea class="contact__form_field" type="text" name="message" maxlength="6000" rows="5" autocomplete="off" placeholder="Poruka" required id="message"></textarea>
+            <button id="submit" class="curtains__section_buttons-button button__primary" type="submit" name="submit">Pošalji</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footer__elements footer__item">
+          <div class="footer__elements_logo">
+            <img src="./images/logo__purple.svg" alt="Katatekstil logo" class="footer__elements_logo-img" />
+          </div>
+          <div class="footer__elements_items">
+            <div class="footer__elements_address footer__item">
+              <h3 class="footer__elements_header">Adresa:</h3>
+              <p>Kralja Petra I oslobodioca 115,</p>
+              <p>Stara Pazova 22300</p>
+            </div>
+            <div class="footer__elements_contact footer__item">
+              <h3 class="footer__elements_header">Kontakt</h3>
+              <p><a href="tel:+381641169357">064 11 69 357</a></p>
+              <p><a href="#">radnja@katatekstil.rs</a></p>
+            </div>
+            <div class="footer__elements_products footer__item">
+              <h3 class="footer__elements_header">Proizvodi</h3>
+              <p>Zavese</p>
+              <p>Dekoracija zidova</p>
+              <p>Ostali proizvodi</p>
+            </div>
+            <div class="footer__elements_socials footer__item">
+              <h3 class="footer__elements_header">Pratite nas!</h3>
+              <div class="footer__elements_socials-wrapper">
+                <div>
+                  <a href="#">
+                    <img src="./icons/facebook-white.svg" alt="dugme za Facebook Katatekstil" />
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="./icons/instagram-white.svg" class="footer__elements_socials-icon" alt="dugme za Instagram Katatekstil" />
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="./icons/tiktok-white.svg" class="footer__elements_socials-icon" alt="dugme za Tiktok Katatekstil" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="..." />
+    <link rel="stylesheet" href="sass/style.css" />
+    <link rel="stylesheet" href="venobox/dist/venobox.min.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon 46x46.png" />
+    <noscript><link rel="stylesheet" href="styles.css" /></noscript>
+    <script defer src="app.js"></script>
+    <title>Katatekstil - Zavese</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__nav_logo">
+          <a href="/"><img class="header__nav_logo-img" src="./images/logo.svg" alt="Katatekstil logo" /></a>
+        </div>
+        <div class="header__nav_menu">
+          <div class="header__nav_menu-mobile">
+            <button class="header__nav_menu-mobile--icon" aria-label="otvori zatvori meni">
+              <img src="./icons/list-black.svg" alt="Otvori meni" class="nav__menu_icon" />
+              <img src="./icons/x-circle-black.svg" alt="Zatvori meni" class="nav__menu_icon display__none" />
+            </button>
+            <div class="header__mobile display__none">
+              <ul class="header__mobile_list">
+                <li class="header__mobile_list-item"><a href="./">početna</a></li>
+                <!-- <li class="header__mobile_list-item-curtains">
+                  <a href="#">
+                    Zavese
+                    <img src="./icons/caret-down-fill-black.svg" alt="Dole" class="caret" />
+                    <img src="./icons/caret-up-fill-black.svg" alt="Gore" class="caret display__none" />
+                  </a>
+                  <ul class="header__mobile_list-item--curtains display__none">
+                    <li><a href="curtains.html#zebre">Zebra Zavese</a></li>
+                    <li><a href="curtains.html#rolo">Rolo Zavese</a></li>
+                    <li><a href="curtains.html#zip">Zip Sistemi</a></li>
+                    <li><a href="curtains.html#paketo">Paketo Zavese</a></li>
+                    <li><a href="curtains.html#drveni">Drveni Venecijaneri</a></li>
+                    <li><a href="curtains.html#draperi">Draperi</a></li>
+                    <li><a href="curtains.html#zavese">Zavese</a></li>
+                    <li><a href="curtains.html#garnisne">Garnišne</a></li>
+                  </ul>
+                </li> -->
+                <li class="header__nav_menu-desktop--list-item" id="curtains">
+                  <a href="curtains.html">zavese</a>
+                </li>
+                <li class="header__mobile_list-item"><a href="wallpapers.html">tapete</a></li>
+                <li class="header__mobile_list-item"><a href="others.html">ostali proizvodi</a></li>
+                <li class="header__mobile_list-item"><a href="measure.html">uzimanje mera</a></li>
+                <li class="header__mobile_list-item"><a href="contact.html">kontakt</a></li>
+                <li class="header__mobile_list-item">
+                  <div class="header__mobile_list-item--socials">
+                    <a href="#">
+                      <img src="./icons/facebook-black.svg" alt="Facebook Katatekstil" />
+                    </a>
+                    <a href="">
+                      <img src="./icons/instagram-black.svg" alt="instagram Katatekstil" />
+                    </a>
+                    <a href="">
+                      <img src="./icons/tiktok-black.svg" alt="Tiktok Katatekstil" />
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__nav_menu-desktop display__none">
+            <ul class="header__nav_menu-desktop--list">
+              <li class="header__nav_menu-desktop--list-item">
+                <a href="./">početna</a>
+              </li>
+              <li class="header__nav_menu-desktop--list-item" id="curtains">
+                <a href="curtains.html">zavese</a>
+              </li>
+              <li class="header__nav_menu-desktop--list-item">
+                <a href="wallpapers.html">tapete</a>
+              </li>
+              <li class="header__nav_menu-desktop--list-item">
+                <a href="others.html"> ostali proizvodi</a>
+              </li>
+              <li class="header__nav_menu-desktop--list-item">
+                <a href="measure.html">uzimanje mera</a>
+              </li>
+              <li class="header__nav_menu-desktop--list-item">
+                <a href="contact.html">kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="header__hero_tabs"></div>
+    </header>
+    <section class="curtains__menu">
+      <ul class="curtains__menu_list">
+        <div class="curtains__menu_list-header">
+          <h3 class="curtains__menu_list-header--category">Zavese</h3>
+        </div>
+        <li class="curtains__menu_list-item active__selection" id="zebra">Zebra Zavese</li>
+        <li class="curtains__menu_list-item" id="rolo">Rolo</li>
+        <li class="curtains__menu_list-item" id="zip">Zip</li>
+        <li class="curtains__menu_list-item" id="paketo">Paketo</li>
+        <li class="curtains__menu_list-item" id="paneli">Panelne</li>
+        <li class="curtains__menu_list-item" id="drveni">Drveni</li>
+        <li class="curtains__menu_list-item" id="draperi">
+          Draperi
+          <a class="curtains__menu_list-link" href="#"></a>
+        </li>
+        <li class="curtains__menu_list-item" id="zavese">Zavese</li>
+        <li class="curtains__menu_list-item" id="garnisne">Garnišne</li>
+      </ul>
+      <div class="curtains__content">
+        <div class="gg-container">
+          <div class="gg-box" data-set="zebra">
+            <h1 class="selection__item_text-header">Zebra Zavese</h1>
+            <p>Zebra zavese pravljene su od antistatik materijala koji odbija prašinu i mirise, te su vrlo pogodne za osobe sklone alergijama. Postoje 3 načina kačenja: Na plafon, Na zid Ili direktno na stolariju; Sistem kačenja na stolariju može biti bez bušenja ili sa bušenjem, gde se vođicama samo platno fiksira za prozor. Takodje, zebra zavese mogu biti bez i sa maskom. Maska isključivo ima estetsku funkciju i prikriva sam mehanizam. Platno koje birate, razvrstano je u 4 kategorije (A, B, C i D), prema kojima se razlikuje i cena. Takodje pored platna, birate i boju maske koju želite( bela, crna i srebrna). Način održavanja: Ukoliko dodje do flekanja same tkanine, vlažnom krpom ili sunđerom i deterdžentom blago istrljati površinu. Na kraju prebrisati suvom krpom.</p>
+            <div class="selection__info">
+              <div class="selection__info_work">
+                <p class="selection__info_work-paragraph">
+                  Kata Tekstil pruža uslugu dolaska na Vašu lokaciju radi preciznog merenja za zavese i tekstilne dekoracije. Naš tim stručnjaka će Vam pomoći u odabiru savršenih materijala i dizajna. Za više informacija pozovite <span class="selection__info_work-span"><a href="">064-1169-357</a></span> 
+                </p>
+              </div>
+            </div>
+            <div class="gallery__box">
+              <a class="venobox lozad" data-href="images/zavese/zebre/zebra_01_galerija.webp" data-gall="gallery01" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zebre/zebra_01_galerija.webp" alt="Zebra zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zebre/zebra_02_galerija.webp" data-gall="gallery01" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zebre/zebra_02_galerija.webp" alt="Zebra zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zebre/zebra_03_galerija.webp" data-gall="gallery01" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zebre/zebra_03_galerija.webp" alt="Zebra zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zebre/zebra_04.webp" data-gall="gallery01" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zebre/zebra_04.webp" alt="Zebra zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zebre/zebra_05.webp" data-gall="gallery01" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zebre/zebra_05.webp" alt="Zebra zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zebre/zebra_06.webp" data-gall="gallery01" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zebre/zebra_06.webp" alt="Zebra zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zebre/zebra_07.webp" data-gall="gallery01" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zebre/zebra_07.webp" alt="Zebra zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zebre/zebra_08.webp" data-gall="gallery01" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zebre/zebra_08.webp" alt="Zebra zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zebre/zebra_09.webp" data-gall="gallery01" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zebre/zebra_09.webp" alt="Zebra zavese Katatekstil kuća tekstila" />
+              </a>
+            </div>
+          </div>
+          <div class="gg-box display__none" data-set="rolo">
+            <h1 class="selection__item_text-header">Rolo Zavese</h1>
+            <p>Rolo sistemi, svojim mehanizmom i sistemom kačenja, vrlo su slični zebra zavesama, s tim da je njihovo platno jednostrano. Od mnogobrojnih dezena, ističemo blackout platna koja 100% sprečavaju prodor svetlosti.</p>
+            <div class="selection__info">
+              <div class="selection__info_work">
+                <p class="selection__info_work-paragraph">
+                  Kata Tekstil pruža uslugu dolaska na Vašu lokaciju radi preciznog merenja za zavese i tekstilne dekoracije. Naš tim stručnjaka će Vam pomoći u odabiru savršenih materijala i dizajna. Za više informacija pozovite <span class="selection__info_work-span"><a href="">064-1169-357</a></span> 
+                </p>
+              </div>
+            </div>
+            <div class="gallery__box">
+              <a class="venobox lozad" data-href="images/zavese/rolo/rolo_01.webp" data-gall="gallery02" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/rolo/rolo_01.webp" alt="rolo zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/rolo/rolo_02.webp" data-gall="gallery02" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/rolo/rolo_02.webp" alt="rolo zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/rolo/rolo_03.webp" data-gall="gallery02" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/rolo/rolo_03.webp" alt="rolo zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/rolo/rolo_04.webp" data-gall="gallery02" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/rolo/rolo_04.webp" alt="rolo zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/rolo/rolo_05.webp" data-gall="gallery02" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/rolo/rolo_05.webp" alt="rolo zavese Katatekstil kuća tekstila" />
+              </a>
+            </div>
+          </div>
+          <div class="gg-box display__none" data-set="zip">
+            <h1 class="selection__item_text-header">Zip Sistemi</h1>
+            <p>Montiranjem sa spoljne strane prozora ZIP sistemi su najbolje rešenje za termoregulaciju enterijera. Platna ZIP sistema su izuzetnih karakteristika. Izrađena su od 100% recikliranih materijala. U kategoriji su negorivih i energy saving materijala. Takođe, u potpunosti štite od svih vrsta alergena. Mega Lux ZIP sistemi sa svojim elektromotorima mogu da se povežu na Smart Home sisteme i time dodatno dobiju na funkcionalnosti. Naši ZIP sistemi su idealni za bašte, kafiće i uopšte gde se pojavi potreba za spoljašnjom upotrebom.</p>
+            <div class="selection__info">
+              <div class="selection__info_work">
+                <p class="selection__info_work-paragraph">
+                  Kata Tekstil pruža uslugu dolaska na Vašu lokaciju radi preciznog merenja za zavese i tekstilne dekoracije. Naš tim stručnjaka će Vam pomoći u odabiru savršenih materijala i dizajna. Za više informacija pozovite <span class="selection__info_work-span"><a href="">064-1169-357</a></span> 
+                </p>
+              </div>
+            </div>
+            <div class="gallery__box">
+              <a class="venobox lozad" data-href="images/zavese/zip/zip_01.webp" data-gall="gallery03" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zip/zip_01.webp" alt="zip zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zip/zip_02.webp" data-gall="gallery03" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zip/zip_02.webp" alt="zip zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zip/zip_03.webp" data-gall="gallery03" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zip/zip_03.webp" alt="zip zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zip/zip_04.webp" data-gall="gallery03" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zip/zip_04.webp" alt="zip zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zip/zip_05.webp" data-gall="gallery03" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zip/zip_05.webp" alt="zip zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zip/zip_05.webp" data-gall="gallery03" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zip/zip_05.webp" alt="zip zavese Katatekstil kuća tekstila" />
+              </a>
+            </div>
+          </div>
+          <div class="gg-box display__none" data-set="paketo">
+            <h1 class="selection__item_text-header">Paketo - Rimske zavese</h1>
+            <p>Klasični Paketo sistemi učiniće da Vaši prozori dobiju prelep izgled. Kod nas imate raznolik izbor Paketo zavesa, bez obzira da li želite tradicionalna platna za kuhinju ili cvetne dezene za dnevni boravak. Idealne za ograničavanje sunčeve svetlosti kada je potrebno, paketo sistemi su moderni i jednostavni za upotrebu. Paketo zavese će sa lakoćom stvoriti mediteranski izgled spavaće ili dnevne sobe.</p>
+            <div class="selection__info">
+              <div class="selection__info_work">
+                <p class="selection__info_work-paragraph">
+                  Kata Tekstil pruža uslugu dolaska na Vašu lokaciju radi preciznog merenja za zavese i tekstilne dekoracije. Naš tim stručnjaka će Vam pomoći u odabiru savršenih materijala i dizajna. Za više informacija pozovite <span class="selection__info_work-span"><a href="">064-1169-357</a></span> 
+                </p>
+              </div>
+            </div>
+            <div class="gallery__box">
+              <a class="venobox lozad" data-href="images/zavese/rimske/rimske_01.webp" data-gall="gallery04" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/rimske/rimske_01.webp" alt="rimske zavese paketo sistemi Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/rimske/rimske_02.webp" data-gall="gallery04" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/rimske/rimske_02.webp" alt="rimske zavese paketo sistemi Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/rimske/rimske_03.webp" data-gall="gallery04" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/rimske/rimske_03.webp" alt="rimske zavese paketo sistemi Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/rimske/rimske_04.webp" data-gall="gallery04" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/rimske/rimske_04.webp" alt="rimske zavese paketo sistemi Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/rimske/rimske_05.webp" data-gall="gallery04" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/rimske/rimske_05.webp" alt="rimske zavese paketo sistemi Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/rimske/rimske_06.webp" data-gall="gallery04" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/rimske/rimske_06.webp" alt="rimske zavese paketo sistemi Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/rimske/rimske_07.webp" data-gall="gallery04" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/rimske/rimske_07.webp" alt="rimske zavese paketo sistemi Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/rimske/rimske_08.webp" data-gall="gallery04" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/rimske/rimske_08.webp" alt="rimske zavese paketo sistemi Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/rimske/rimske_09.webp" data-gall="gallery04" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/rimske/rimske_09.webp" alt="rimske zavese paketo sistemi Katatekstil kuća tekstila" />
+              </a>
+            </div>
+          </div>
+          <div class="gg-box display__none" data-set="paneli">
+            <h1 class="selection__item_text-header">Panelne Zavese</h1>
+            <p>Panel zavese nude predivan savremeni izgled koji savršeno dopunjuje prozore, posebno prozore većih površina. Pored toga što mogu da zasenče prozore na više načina, Panel zavese mogu da se koriste i kao pregrade, dodajući modernu, orijentalnu, atmosferu u bilo koji dom.</p>
+            <div class="selection__info">
+              <div class="selection__info_work">
+                <p class="selection__info_work-paragraph">
+                  Kata Tekstil pruža uslugu dolaska na Vašu lokaciju radi preciznog merenja za zavese i tekstilne dekoracije. Naš tim stručnjaka će Vam pomoći u odabiru savršenih materijala i dizajna. Za više informacija pozovite <span class="selection__info_work-span"><a href="">064-1169-357</a></span> 
+                </p>
+              </div>
+            </div>
+            <div class="gallery__box">
+              <a class="venobox lozad" data-href="images/zavese/panel/panel_01.webp" data-gall="gallery05" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/panel/panel_01.webp" alt="panel zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/panel/panel_02.webp" data-gall="gallery05" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/panel/panel_02.webp" alt="panel zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/panel/panel_03.webp" data-gall="gallery05" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/panel/panel_03.webp" alt="panel zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/panel/panel_04.webp" data-gall="gallery05" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/panel/panel_04.webp" alt="panel zavese Katatekstil kuća tekstila" />
+              </a>
+            </div>
+          </div>
+          <div class="gg-box display__none" data-set="drveni">
+            <h1 class="selection__item_text-header">Drveni Venecijaneri</h1>
+            <p>Usled mogućnosti kontrole osvetljenosti i termoregulacije prostorije, kao i upotrebe prirodnih materijala. Drveni Venecijaneri su pravo rešenje za Vaše prozore. Modernog su dizajna, te se lako uklapaju u svačiji prostor. Potpuni efekat se dobije kada se kombinuju sa draperijama.</p>
+            <div class="selection__info">
+              <div class="selection__info_work">
+                <p class="selection__info_work-paragraph">
+                  Kata Tekstil pruža uslugu dolaska na Vašu lokaciju radi preciznog merenja za zavese i tekstilne dekoracije. Naš tim stručnjaka će Vam pomoći u odabiru savršenih materijala i dizajna. Za više informacija pozovite <span class="selection__info_work-span"><a href="">064-1169-357</a></span> 
+                </p>
+              </div>
+            </div>
+            <div class="gallery__box">
+              <a class="venobox lozad" data-href="images/zavese/drveni/drveni_01.webp" data-gall="gallery06" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/drveni/drveni_01.webp" alt="Drveni venecijaneri Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/drveni/drveni_02.webp" data-gall="gallery06" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/drveni/drveni_02.webp" alt="Drveni venecijaneri Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/drveni/drveni_03.webp" data-gall="gallery06" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/drveni/drveni_03.webp" alt="Drveni venecijaneri Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/drveni/drveni_04.webp" data-gall="gallery06" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/drveni/drveni_04.webp" alt="Drveni venecijaneri Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/drveni/drveni_05.webp" data-gall="gallery06" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/drveni/drveni_05.webp" alt="Drveni venecijaneri Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/drveni/drveni_06.webp" data-gall="gallery06" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/drveni/drveni_06.webp" alt="Drveni venecijaneri Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/drveni/drveni_07.webp" data-gall="gallery06" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/drveni/drveni_07.webp" alt="Drveni venecijaneri Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/drveni/drveni_08.webp" data-gall="gallery06" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/drveni/drveni_08.webp" alt="Drveni venecijaneri Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/drveni/drveni_09.webp" data-gall="gallery06" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/drveni/drveni_09.webp" alt="Drveni venecijaneri Katatekstil kuća tekstila" />
+              </a>
+            </div>
+          </div>
+          <div class="gg-box display__none" data-set="draperi">
+            <h1 class="selection__item_text-header">Draperije</h1>
+            <p>Draperije su neophodan element u svakom prostoru, pružajući estetski efekat i funkcionalnost. One doprinose atmosferi prostora, prilagodivši svetlost i obezbeđujući privatnost.</p>
+            <div class="selection__info">
+              <div class="selection__info_work">
+                <p class="selection__info_work-paragraph">
+                  Kata Tekstil pruža uslugu dolaska na Vašu lokaciju radi preciznog merenja za zavese i tekstilne dekoracije. Naš tim stručnjaka će Vam pomoći u odabiru savršenih materijala i dizajna. Za više informacija pozovite <span class="selection__info_work-span"><a href="">064-1169-357</a></span> 
+                </p>
+              </div>
+            </div>
+            <div class="gallery__box">
+              <a class="venobox lozad" data-href="images/zavese/draperija/draperija_01.webp" data-gall="gallery07" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/draperija/draperija_01.webp" alt="Draperija Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/draperija/draperija_02.webp" data-gall="gallery07" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/draperija/draperija_02.webp" alt="Draperija Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/draperija/draperija_03.webp" data-gall="gallery07" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/draperija/draperija_03.webp" alt="Draperija Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/draperija/draperija_04.webp" data-gall="gallery07" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/draperija/draperija_04.webp" alt="Draperija Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/draperija/draperija_05.webp" data-gall="gallery07" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/draperija/draperija_05.webp" alt="Draperija Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/draperija/draperija_06.webp" data-gall="gallery07" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/draperija/draperija_06.webp" alt="Draperija Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/draperija/draperija_07.webp" data-gall="gallery07" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/draperija/draperija_07.webp" alt="Draperija Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/draperija/draperija_08.webp" data-gall="gallery07" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/draperija/draperija_08.webp" alt="Draperija Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/draperija/draperija_09.webp" data-gall="gallery07" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/draperija/draperija_09.webp" alt="Draperija Katatekstil kuća tekstila" />
+              </a>
+            </div>
+          </div>
+          <div class="gg-box display__none" data-set="zavese">
+            <h1 class="selection__item_text-header">Klasične Zavese</h1>
+            <p>Zavese su ključni deo uređenja svakog prostora, dodajući eleganciju i toplinu. One su višestruko funkcionalne, obogaćujući prostor svojim dizajnom dok istovremeno omogućavaju doziranje svetlosti i stvaranje intimne atmosfere.</p>
+            <div class="selection__info">
+              <div class="selection__info_work">
+                <p class="selection__info_work-paragraph">
+                  Kata Tekstil pruža uslugu dolaska na Vašu lokaciju radi preciznog merenja za zavese i tekstilne dekoracije. Naš tim stručnjaka će Vam pomoći u odabiru savršenih materijala i dizajna. Za više informacija pozovite <span class="selection__info_work-span"><a href="">064-1169-357</a></span> 
+                </p>
+              </div>
+            </div>
+            <div class="gallery__box">
+              <a class="venobox lozad" data-href="images/zavese/zavese/zavese_01.webp" data-gall="gallery08" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zavese/zavese_01.webp" alt="Zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zavese/zavese_02.webp" data-gall="gallery08" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zavese/zavese_02.webp" alt="Zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zavese/zavese_03.webp" data-gall="gallery08" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zavese/zavese_03.webp" alt="Zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zavese/zavese_04.webp" data-gall="gallery08" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zavese/zavese_04.webp" alt="Zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zavese/zavese_05.webp" data-gall="gallery08" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zavese/zavese_05.webp" alt="Zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zavese/zavese_06.webp" data-gall="gallery08" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zavese/zavese_06.webp" alt="Zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zavese/zavese_07.webp" data-gall="gallery08" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zavese/zavese_07.webp" alt="Zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zavese/zavese_08.webp" data-gall="gallery08" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zavese/zavese_08.webp" alt="Zavese Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/zavese/zavese_09.webp" data-gall="gallery08" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/zavese/zavese_09.webp" alt="Zavese Katatekstil kuća tekstila" />
+              </a>
+            </div>
+          </div>
+          <div class="gg-box display__none" data-set="garnisne">
+            <h1 class="selection__item_text-header">Garnišne</h1>
+            <p>Garnišne predstavljaju važan detalj u postavljanju zavesa, pružajući podršku i estetski doprinos prostoru. Kod nas možete pronaći dve vrste garnišni: plafonske,sa maskom i bez, kao i zidne, koje mogu biti sa jednim ili dva kanala, i u više boja.</p>
+            <div class="selection__info">
+              <div class="selection__info_work">
+                <p class="selection__info_work-paragraph">
+                  Kata Tekstil pruža uslugu dolaska na Vašu lokaciju radi preciznog merenja za zavese i tekstilne dekoracije. Naš tim stručnjaka će Vam pomoći u odabiru savršenih materijala i dizajna. Za više informacija pozovite <span class="selection__info_work-span"><a href="">064-1169-357</a></span> 
+                </p>
+              </div>
+            </div>
+            <div class="gallery__box">
+              <a class="venobox lozad" data-href="images/zavese/garnisne/garnisna_01.webp" data-gall="gallery09" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/garnisne/garnisna_01.webp" alt="Garnišne Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/garnisne/garnisna_02.webp" data-gall="gallery09" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/garnisne/garnisna_02.webp" alt="Garnišne Katatekstil kuća tekstila" />
+              </a>
+              <a class="venobox lozad" data-href="images/zavese/garnisne/garnisna_03.webp" data-gall="gallery09" data-fitview="true">
+                <img class="slika_mala lozad" data-src="images/zavese/garnisne/garnisna_03.webp" alt="Garnišne Katatekstil kuća tekstila" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footer__elements footer__item">
+          <div class="footer__elements_logo">
+            <img src="./images/logo__purple.svg" alt="" class="footer__elements_logo-img" />
+          </div>
+          <div class="footer__elements_items">
+            <div class="footer__elements_address footer__item">
+              <h3 class="footer__elements_header">Adresa:</h3>
+              <p>Kralja Petra I oslobodioca 115,</p>
+              <p>Stara Pazova 22300</p>
+            </div>
+            <div class="footer__elements_contact footer__item">
+              <h3 class="footer__elements_header">Kontakt</h3>
+              <p><a href="tel:+381641169357">064 11 69 357</a></p>
+              <p><a href="#">radnja@katatekstil.rs</a></p>
+            </div>
+            <div class="footer__elements_products footer__item">
+              <h3 class="footer__elements_header">Proizvodi</h3>
+              <p>Zavese</p>
+              <p>Dekoracija zidova</p>
+              <p>Ostali proizvodi</p>
+            </div>
+            <div class="footer__elements_socials footer__item">
+              <h3 class="footer__elements_header">Pratite nas!</h3>
+              <div class="footer__elements_socials-wrapper">
+                <div>
+                  <a href="#">
+                    <img src="./icons/facebook-white.svg" alt="Facebook Katatekstil" />
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="./icons/instagram-white.svg" class="footer__elements_socials-icon" alt="Instagram Katatekstil" />
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="./icons/tiktok-white.svg" class="footer__elements_socials-icon" alt="Tiktok Katatekstil" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="venobox/dist/venobox.min.js"></script>
+    <script>
+      new VenoBox({
+        selector: ".venobox",
+        numeration: true,
+        infinigall: true,
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+  </body>
+</html>
