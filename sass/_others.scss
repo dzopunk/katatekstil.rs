@@ -1,0 +1,179 @@
+.items {
+  margin-inline: 2rem;
+  margin-top: 5rem;
+  text-align: start;
+  &__header {
+    margin-bottom: 2rem;
+  }
+  &__text {
+    margin-bottom: 5rem;
+  }
+  &__products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_pictures {
+      border-radius: 50%;
+      width: 25rem;
+      height: 25rem;
+      overflow: hidden;
+      margin-bottom: 3rem;
+      &-image {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 22.5em) {
+  .items {
+    margin-inline: 3rem;
+  }
+}
+@media only screen and (min-width: 24.375em) {
+  .items {
+    margin-inline: 4rem;
+  }
+}
+@media only screen and (min-width: 25.75em) {
+  .items {
+    margin-inline: 5rem;
+  }
+}
+@media only screen and (min-width: 48em) {
+  .items {
+    margin-inline: 15rem;
+    margin-top: 8rem;
+    &__products {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &_pictures {
+        width: 15rem;
+        height: 15rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 64em) {
+  .items {
+    &__products {
+      &_pictures {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 80em) {
+  .items {
+    &__products {
+      margin-inline: 2rem;
+      &_pictures {
+        width: 24rem;
+        height: 24rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 118.5em) {
+  .items {
+    margin-top: 10rem;
+    margin-inline: 40rem;
+    &__header {
+      margin-bottom: 5rem;
+    }
+    &__text {
+      margin-bottom: 10rem;
+    }
+    &__products_pictures {
+      width: 28rem;
+      height: 28rem;
+    }
+  }
+}
+.shop {
+  margin-inline: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  &__header {
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    margin-bottom: 5rem;
+  }
+  &__shop {
+    width: 100%;
+    &_image {
+      width: 100%;
+      display: block;
+    }
+  }
+  &__info {
+    margin-bottom: 5rem;
+    &_item {
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      &-icon {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 22.5em) {
+  .shop {
+    margin-inline: 3rem;
+  }
+}
+@media only screen and (min-width: 24.375em) {
+  .shop {
+    margin-inline: 4rem;
+  }
+}
+@media only screen and (min-width: 25.75em) {
+  .shop {
+    margin-inline: 5rem;
+  }
+}
+@media only screen and (min-width: 48em) {
+  .shop {
+    margin-inline: 15rem;
+    margin-top: 8rem;
+  }
+}
+@media only screen and (min-width: 80em) {
+  .shop {
+    &__info {
+      margin-right: 8rem;
+    }
+  }
+  .shop__shop {
+    width: 55%;
+    margin: 0 auto;
+  }
+  .omotac {
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 100em) {
+  .shop__shop {
+    width: 45%;
+    margin: 0 auto;
+  }
+  .omotac {
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 118.5em) {
+  .shop {
+    margin-inline: 40rem;
+    &__header {
+      margin-bottom: 5rem;
+    }
+  }
+}

@@ -1,0 +1,232 @@
+.wallpaper {
+  margin-inline: 2rem;
+  margin-top: 5rem;
+}
+@media only screen and (min-width: 22.5em) {
+  .wallpaper {
+    margin-inline: 3rem;
+  }
+}
+@media only screen and (min-width: 24.375em) {
+  .wallpaper {
+    margin-inline: 4rem;
+  }
+}
+@media only screen and (min-width: 25.75em) {
+  .wallpaper {
+    margin-inline: 5rem;
+  }
+}
+@media only screen and (min-width: 48em) {
+  .wallpaper {
+    margin-inline: 10rem;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .wallpaper {
+    margin-inline: 20rem;
+  }
+}
+@media only screen and (min-width: 85.375em) {
+  .wallpaper {
+    margin-inline: 15rem;
+  }
+}
+@media only screen and (min-width: 118.5em) {
+  .wallpaper {
+    margin-top: 10rem;
+    margin-inline: 40rem;
+  }
+}
+.wallpapers {
+  margin-top: 5rem;
+  &__intro {
+    text-align: start;
+    &_header {
+      margin-bottom: 2rem;
+      text-align: start;
+    }
+  }
+  &__brands {
+    text-align: start;
+    &_header {
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+    &_text {
+    }
+    &_collection {
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &-item {
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--header {
+          margin-bottom: 2rem;
+          font-weight: 400;
+          font-size: 1.6rem;
+        }
+      }
+      &-catalog {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 8rem;
+        height: 8rem;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--icon {
+          position: absolute;
+          top: 85%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+  &__link {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+  }
+}
+@media only screen and (min-width: 22.5em) {
+  .wallpapers__brands_collection-catalog {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+@media only screen and (min-width: 48em) {
+  .wallpapers__intro {
+    text-align: justify;
+  }
+  .wallpapers__brands_wrapper {
+    text-align: justify;
+  }
+  .wallpapers__brands_collection-catalog {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .wallpapers__brands_collection-catalog {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+@media only screen and (min-width: 80em) {
+  .wallpapers__brands_collection {
+    margin-inline: 5rem;
+  }
+  .wallpapers__brands_collection-catalog {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+@media only screen and (min-width: 85.375em) {
+  .wallpapers__brands {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    &_wrapper {
+      flex-basis: 45%;
+    }
+    &_collection {
+      margin-inline: 0;
+      & > *:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 118.5em) {
+  .wallpapers__intro_header {
+    margin-bottom: 5rem;
+  }
+}
+.catalog__first {
+  background-image: url("/images/wallpapers/perfection-01.webp");
+}
+.catalog__second {
+  background-image: url("/images/wallpapers/essential-01.webp");
+}
+.catalog__third {
+  background-image: url("/images/wallpapers/barista-01.webp");
+}
+.catalog__fourth {
+  background-image: url("/images/wallpapers/mondo-baby-01.webp");
+}
+.catalog__fifth {
+  background-image: url("/images/wallpapers/thema-01.webp");
+}
+.catalog__sixth {
+  background-image: url("/images/wallpapers/casa-mood-01.webp");
+}
+.slicka {
+  width: 100%;
+  display: block;
+}
+
+
+.help {
+  margin-inline: 2rem;
+  text-align: start;
+  margin-bottom: 10rem;
+  &__header {
+    margin-bottom: 2rem;
+  }
+  &__span {
+    color: var(--color-primary);
+  }
+}
+@media only screen and (min-width: 22.5em) {
+  .help {
+    margin-inline: 3rem;
+  }
+}
+@media only screen and (min-width: 24.375em) {
+  .help {
+    margin-inline: 4rem;
+  }
+}
+@media only screen and (min-width: 25.75em) {
+  .help {
+    margin-inline: 5rem;
+  }
+}
+@media only screen and (min-width: 48em) {
+  .help {
+    margin-inline: 10rem;
+    margin-top: 5rem;
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .help {
+    margin-inline: 20rem;
+  }
+}
+@media only screen and (min-width: 85.375em) {
+  .help {
+    margin-inline: 15rem;
+  }
+}
+@media only screen and (min-width: 118.5em) {
+  .help {
+    margin-top: 10rem;
+    margin-inline: 40rem;
+    &__header {
+      margin-bottom: 5rem;
+    }
+  }
+}

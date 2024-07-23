@@ -1,0 +1,104 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: 2rem;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 5rem;
+    text-align: center;
+    &_paragraph {
+      margin-bottom: 3rem;
+    }
+    &_phone {
+      font-weight: 500;
+      font-size: 2rem;
+      text-decoration: underline;
+      display: flex;
+      align-items: center;
+      &-icon {
+        margin-right: 1rem;
+      }
+    }
+  }
+  &__section {
+    margin-bottom: 10rem;
+  }
+  &__form {
+    &_input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-header {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+      }
+    }
+    &_field {
+      width: 26rem;
+      margin-bottom: 3rem;
+      font-family: inherit;
+      padding: 1rem 2rem;
+      border: 1px solid var(--color-text);
+      border-radius: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 22.5em) {
+  .contact {
+    margin-inline: 3rem;
+  }
+}
+@media only screen and (min-width: 24.375em) {
+  .contact {
+    margin-inline: 4rem;
+  }
+}
+@media only screen and (min-width: 25.75em) {
+  .contact {
+    margin-inline: 5rem;
+  }
+}
+@media only screen and (min-width: 48em) {
+  .contact {
+    margin-inline: 10rem;
+    margin-top: 8rem;
+    &__form_field {
+      width: 35rem;
+    }
+  }
+}
+@media only screen and (min-width: 64em) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    &__text {
+      flex-basis: 45%;
+    }
+    &__section {
+      flex-basis: 45%;
+    }
+    &__form_field {
+      width: 30rem;
+    }
+  }
+}
+@media only screen and (min-width: 85.375em) {
+  .contact {
+    margin-inline: 15rem;
+  }
+}
+@media only screen and (min-width: 118.5em) {
+  .contact {
+    margin-inline: 40rem;
+    margin-top: 10rem;
+    &__form_field {
+      width: 40rem;
+    }
+  }
+}

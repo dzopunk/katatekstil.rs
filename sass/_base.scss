@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  position: relative;
+  color: #212529;
+  background-color: var(--color-white);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  --color-white: #faf9f6;
+  --color-text: #1c1f22;
+  --color-primary: #8e4e9e;
+  --border: 1px solid black;
+  --swiper-pagination-color: #8e4e9e;
+  --swiper-pagination-bullet-inactive-color: #faf9f6;
+  --swiper-pagination-bullet-inactive-opacity: "1";
+  --swiper-pagination-bullet-size: 1.4rem;
+  --swiper-pagination-bullet-horizontal-gap: 0.7rem;
+}
